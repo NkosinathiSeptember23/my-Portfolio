@@ -129,7 +129,7 @@ nav a{
 
 #about .inner {
     width: 80%;
-    min-height: 400px;
+    min-height: 500px;
     margin: auto;
     display: flex; 
     flex-wrap: wrap; 
@@ -724,7 +724,13 @@ nav a{
         }
     }
     .download-button {
-        
+        display: inline-block;
+        margin-top: 10px;
+        padding: 10px 15px;
+        background-color: #555;
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
     }
     .download-button:hover {
         background-color: #0056b3;
