@@ -48,7 +48,7 @@ nav a{
     position: fixed;
     top: 0;
     right: 0;
-    height: 10vh;
+    height: 100vh;
     width: 250px;
     z-index: 999;
     background-color: #555;
