@@ -723,16 +723,5 @@ nav a{
             margin-bottom: 20px; 
         }
     }
-.download-button {
-        display: inline-block;
-        margin-top: 10px;
-        padding: 10px 15px;
-        background-color: #555;
-        color: white;
-        text-decoration: none;
-        border-radius: 5px;
-    }
-    .download-button:hover {
-        background-color: #0056b3;
-    }
+
   
