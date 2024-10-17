@@ -6,7 +6,9 @@
      
     
 }
-
+body{
+    min-height: 100vh;
+}
 *{
     margin: 0;
     padding: 0;
@@ -46,7 +48,7 @@ nav a{
     position: fixed;
     top: 0;
     right: 0;
-    height: 100vh;
+    height: 10vh;
     width: 250px;
     z-index: 999;
     background-color: #555;
@@ -721,7 +723,7 @@ nav a{
             margin-bottom: 20px; 
         }
     }
-     .download-button {
+    .download-button {
         display: inline-block;
         margin-top: 10px;
         padding: 10px 15px;
