@@ -735,7 +735,9 @@ nav a{
         text-decoration: none;
         text-align: center;
         transition: background-color 0.3s ease;
+        animation: moveIn 2s ease-out, fadeIn 2s ease-in;
         margin-top: 10px;
+       
     }
     
     .download-button:hover {
