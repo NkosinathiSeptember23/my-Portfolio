@@ -125,7 +125,7 @@ nav a{
 #about {
     width: 100%;
     min-height: 610px;
-    background-color: grey;
+    background-image: url('/images/back.jpg');
 }
 
 #about .inner {
@@ -219,7 +219,7 @@ nav a{
 #about .inner #bio p {
     text-align: justify;
     font-size: 18px;
-    color: black;
+    color: white;
     font-family: 'Open Sans', sans-serif; 
     font-weight: 300;
     animation: moveIn 2s ease-out, fadeIn 2s ease-in;
@@ -228,6 +228,7 @@ nav a{
     border-left: 4px solid #f39c12; 
     background: rgba(255, 255, 255, 0.1); 
     border-radius: 10px; 
+    font-size: 1.2rem;
 }
 
 @keyframes slideIn {
@@ -246,7 +247,7 @@ nav a{
 }
 
 #back .inner {
-    background-color: #555;
+    background-image: url('images/back.jpg');
     width: 100%;
     min-height: 620px;
 }
@@ -415,7 +416,7 @@ nav a{
     #Certificates {
         width: 100%;
         min-height: 610px;
-        background-color: grey;
+        background-image: url('images/back.jpg');
         padding-top: 80px;
     }
     
@@ -511,7 +512,7 @@ nav a{
     #Skills {
         width: 100%;
         min-height: 610px;
-        background-color: grey;
+        background-image: url('images/back.jpg');
         padding-top: 60px;
     }
     
@@ -607,7 +608,7 @@ nav a{
     #Contact {
         width: 100%;
         min-height: 640px;
-        background-color: grey;
+        background-image: url('images/back.jpg');
         padding-top: 60px;
     }
     
