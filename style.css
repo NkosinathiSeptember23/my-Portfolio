@@ -440,7 +440,7 @@ nav a{
         animation: moveIn 2s ease-out, fadeIn 2s ease-in;
         line-height: 1.6; 
         padding: 0 20px;  
-        background-color: grey; 
+        background-color: blueviolet; 
         border-radius: 10px; 
         text-align: center;
     }
@@ -453,7 +453,7 @@ nav a{
     }
     
     #Certificates .inner #cert {
-        width: 65%;
+        width: 40%;
         min-height: 400px;
         padding-top: 80px;
     }
