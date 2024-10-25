@@ -48,7 +48,7 @@ nav a{
     position: fixed;
     top: 0;
     right: 0;
-    height: 100vh;
+    height: 10vh;
     width: 250px;
     z-index: 999;
     background-color: #555;
@@ -66,6 +66,7 @@ nav a{
 }
 .menuicon{
     display: none;
+    
 }
 
 @media(max-width: 768px){
@@ -564,7 +565,7 @@ nav a{
     }
     
     #Skills .inner li {
-        margin-bottom: 10px; 
+        margin-bottom: 15px; 
         font-size: 1.1em; 
         line-height: 1.2; 
         color: black;    
@@ -724,7 +725,7 @@ nav a{
         }
     }
 
-   .download-button {
+    .download-button {
         display: inline-block;
         padding: 10px 20px;
         font-size: 16px;
@@ -735,9 +736,7 @@ nav a{
         text-decoration: none;
         text-align: center;
         transition: background-color 0.3s ease;
-        animation: moveIn 2s ease-out, fadeIn 2s ease-in;
         margin-top: 10px;
-       
     }
     
     .download-button:hover {
@@ -748,3 +747,16 @@ nav a{
         background-color: #004085; /* Even darker shade when active */
     }
     
+#languages img{
+    min-height: 5px;
+        width: 8%;
+}
+
+#frameworks img{
+    min-height: 5px;
+        width: 8%;
+}
+#cert img{
+    min-height: 2px;
+        width: 3%;
+}
