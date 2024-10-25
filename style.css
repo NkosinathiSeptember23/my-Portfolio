@@ -365,7 +365,7 @@ nav a{
     margin-bottom: 10px; 
     font-size: 1.1em; 
     line-height: 1.2; 
-    color: black;    
+    color: white;    
     text-align: center; 
     list-style: none;
     padding-top: 10px;
@@ -434,7 +434,7 @@ nav a{
     #Certificates .inner li {
         text-align: justify;
         font-size: 18px;
-        color: black;
+        color: white;
         font-family: 'Open Sans', sans-serif; 
         font-weight: 300;
         animation: moveIn 2s ease-out, fadeIn 2s ease-in;
@@ -569,7 +569,7 @@ nav a{
         margin-bottom: 15px; 
         font-size: 1.1em; 
         line-height: 1.2; 
-        color: black;    
+        color: white;
         text-align: center; 
         list-style: none;
         padding-top: 20px;
