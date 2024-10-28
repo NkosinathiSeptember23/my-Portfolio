@@ -78,7 +78,7 @@ function getBotResponse(input) {
     botResponse.text = 'I hold several relevant certifications, including the Azure AI Engineer Associate, which validates my expertise in designing and implementing AI solutions on Microsoft Azure. Additionally, I have completed the Microsoft Azure Fundamentals certification, providing me with a solid foundation in cloud concepts and services. I also hold the Microsoft Azure AI Fundamentals certification, which showcases my understanding of AI and machine learning concepts within the Azure environment. Furthermore, I have completed an "Introduction to Programming" course, as well as a "Complete Coding for Beginners" program, equipping me with essential programming skills and knowledge.'
   } else if (lowerInput.includes('contact info') || lowerInput.includes('6')) {
     botResponse.text = 'You can contact me at nmabena415@gmail.com,0729692671 or reach out via LinkedIn(https://www.linkedin.com/in/nkosinathi-sibiya-b32709254/)'
-  } else if (lowerInput.includes('projects')) {
+  } else if (lowerInput.includes('projects') || lowerInput.includes('4')){
     botResponse.text = 'I have worked on several projects, including a personal website and an e-commerce platform.';
     botResponse.followUp = 'Here is a link to my GitHub repositories to check the projects https://github.com/NkosinathiSeptember23 ';
   } else if (lowerInput.includes('experience')) {
