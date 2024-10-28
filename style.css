@@ -793,7 +793,7 @@ nav ul.sidebar li {
 /* Skills Section */
 #Skills {
     padding: 2rem 10%;
-    background-color: #ffffff;
+    background-image: url('/images/back.jpg');
 }
 
 #Skills .inner {
