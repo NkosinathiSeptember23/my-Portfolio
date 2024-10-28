@@ -11,6 +11,29 @@ body {
     line-height: 1.6;
     background-color: #f4f4f9;
 }
+nav ul{
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-left: 10px;
+    
+}
+nav li{
+    height: 50 px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+
+}
+nav a{
+    height: 100%;
+    padding: 0 30px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: white;
+}
 
 /* Header */
 #header {
