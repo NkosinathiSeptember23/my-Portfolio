@@ -443,8 +443,18 @@ nav a{
         background-color: blueviolet; 
         border-radius: 10px; 
         text-align: center;
+        display: flex;
     }
-    
+    #Certificates .inner ul{
+            list-style-type: none; /* Remove default list styles */
+            padding: 0; /* Remove default padding */
+        
+    }
+    #Certificates .inner ul img{
+        
+            margin-right: 10px; /* Add space between the icon and text */
+    }
+
     /* Responsive Layout */
     #Certificates .inner {
         display: flex;
@@ -520,6 +530,7 @@ nav a{
         width: 100%;
         min-height: 500px;
         margin: auto;
+        
     }
     
     #Skills .inner h1 {
@@ -538,10 +549,10 @@ nav a{
         width: 30%;
         min-height: 400px;
         padding-top: 10px;
-        background-color: #555;
         border-radius: 40px;
         border-color: #f39c12;
         animation: moveIn 1.5s ease-out, fadeIn 1.5s ease-in;
+        
     }
     
     #Skills .inner #languages {
@@ -574,6 +585,13 @@ nav a{
         list-style: none;
         padding-top: 20px;
         animation: slideIn 1.5s ease-out, fadeIn 1.5s ease-in;
+        display: flex;
+        align-items: center;
+    }
+
+    #Skills .inner ul, ol{
+        list-style-type: none; /* Remove default list styles */
+        padding: 0; /* Remove default padding */
     }
     
     /* Responsive Styles */
@@ -759,5 +777,35 @@ nav a{
 }
 #cert img{
     min-height: 2px;
-        width: 3%;
+        width: 5%;
+}
+
+h3{
+        margin-bottom: 20px;
+        margin-top: 10px;
+        color: white;
+        font-family: 'Open Sans', sans-serif; 
+        font-weight: 200;
+        font-size: 2rem; 
+        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); 
+}
+
+.button-container {
+    display: flex; /* Use flexbox for horizontal alignment */
+    justify-content: center; /* Center the buttons */
+    margin-top: 20px; /* Space above buttons */
+}
+
+.button {
+    background-color: #007BFF; /* Button color */
+    color: white; /* Text color */
+    padding: 10px 20px; /* Padding for buttons */
+    margin: 0 10px; /* Space between buttons */
+    text-decoration: none; /* Remove underline */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s; /* Smooth hover effect */
+}
+
+.button:hover {
+    background-color: #0056b3; /* Darker shade on hover */
 }
