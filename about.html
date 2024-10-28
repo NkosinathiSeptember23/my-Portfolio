@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Me</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="about.css">
     <link rel="stylesheet" href="chatbot.css">
 </head>
 <body>
@@ -31,54 +31,58 @@
             </ul>
         </nav>
     </div>
+    
     <section id="about">
         <div class="inner clearfix">
             <div id="image">
-                <img src="images/Nathi.jpg" >
+                <img src="images/Nathi.jpg" alt="Nkosinathi Sibiya">
             </div>
 
             <div id="bio">
                 <h2>ABOUT ME</h2>
                 <p>
-                  I'm a graduate with a Bachelor's degree in Mathematics and Computer Science,
-                  I am eager to utilize my knowledge and expertise in a range of settings.
-                  My passion for software development, AI, and Data Science has led me to continuously expand my skill set,
-                  allowing me to tackle complex problems with confidence. 
-                  With my analytical mindset and dedication to excellence, I am well-equipped to succeed in fast-paced, dynamic environments.Whether contributing to a team or working independently, I am committed to using my skills to make a positive impact and drive results. 
+                    I'm a graduate with a Bachelor's degree in Mathematics and Computer Science.
+                    I am eager to utilize my knowledge and expertise in a range of settings.
+                    My passion for software development, AI, and Data Science has led me to continuously expand my skill set,
+                    allowing me to tackle complex problems with confidence. 
+                    With my analytical mindset and dedication to excellence, I am well-equipped to succeed in fast-paced, dynamic environments.
+                    Whether contributing to a team or working independently, I am committed to using my skills to make a positive impact and drive results. 
                 </p>
                 <a href="SIbiyaN_CV.docx" class="download-button">Download Resume</a>  
 
                 <h3>Education</h3>
-
-                <p>Bsc Mathematical and computer science</p>
-                <p>Honours (computer science)-pending research project</p>
+                <p>BSc Mathematical and Computer Science</p>
+                <p>Honours (Computer Science) - Pending Research Project</p>
             </div>
+            
             <div class="button-row">
                 <button class="button" onclick="showChatbot()">Chat with us</button>
-              </div>
+            </div>
+
             <div id="chatbot" class="chatbot">
                 <div class="chat-header">
-                  <h2>Chatbot</h2>
-                  <button class="close-button" onclick="closeChatbot()">Close</button>
+                    <h2>Chatbot</h2>
+                    <button class="close-button" onclick="closeChatbot()">Close</button>
                 </div>
                 <div id="chat-messages" class="chat-messages"></div>
                 <div class="chat-input-container">
-                  <input id="chat-input" type="text" placeholder="Type a message...">
-                  <button onclick="sendMessage()">Send</button>
+                    <input id="chat-input" type="text" placeholder="Type a message...">
+                    <button onclick="sendMessage()">Send</button>
                 </div>
                 <button class="clear-button" onclick="clearMessages()">Clear</button>
-              </div>
+            </div>
         </div>
     </section>
+
     <footer>
         <p>&copy; 2024 Nkosinathi Sibiya</p>
         <div id="logo">
-            <a href="https://www.linkedin.com/in/nkosinathi-sibiya-b32709254/" target="_blank"><img src="/images/linkedin.png"></a>
-            <a href="https://github.com/NkosinathiSeptember23" target="_blank"><img src="/images/github.png"></a>
-
+            <a href="https://www.linkedin.com/in/nkosinathi-sibiya-b32709254/" target="_blank"><img src="/images/linkedin.png" alt="LinkedIn"></a>
+            <a href="https://github.com/NkosinathiSeptember23" target="_blank"><img src="/images/github.png" alt="GitHub"></a>
         </div>
     </footer>
-     <script>
+
+    <script>
         function showSidebar() {
             const sidebar = document.querySelector('.sidebar');
             sidebar.style.display = 'flex';
@@ -93,6 +97,6 @@
             }, 300);
         }
     </script>
-     <script src="chatbot.js"></script>
+    <script src="chatbot.js"></script>
 </body>
 </html>
