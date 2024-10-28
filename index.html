@@ -57,13 +57,18 @@
         </div>
     </footer> 
     <script>
-        function showSidebar(){
-            const sidebar = document.querySelector('.sidebar')
-            sidebar.style.display = 'flex'
+        function showSidebar() {
+            const sidebar = document.querySelector('.sidebar');
+            sidebar.style.display = 'flex';
+            sidebar.classList.add('visible');
         }
-        function hideSidebar(){
-            const sidebar = document.querySelector('.sidebar')
-            sidebar.style.display = 'none'
+
+        function hideSidebar() {
+            const sidebar = document.querySelector('.sidebar');
+            sidebar.classList.remove('visible');
+            setTimeout(() => {
+                sidebar.style.display = 'none';
+            }, 300);
         }
     </script>
 
