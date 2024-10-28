@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Me</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="chatbot.css">
 </head>
 <body>
     <div id="header" class="clearfix">
@@ -52,6 +53,21 @@
                 <p>Bsc Mathematical and computer science</p>
                 <p>Honours (computer science)-pending research project</p>
             </div>
+            <div class="button-row">
+                <button class="button" onclick="showChatbot()">Chat with us</button>
+              </div>
+            <div id="chatbot" class="chatbot">
+                <div class="chat-header">
+                  <h2>Chatbot</h2>
+                  <button class="close-button" onclick="closeChatbot()">Close</button>
+                </div>
+                <div id="chat-messages" class="chat-messages"></div>
+                <div class="chat-input-container">
+                  <input id="chat-input" type="text" placeholder="Type a message...">
+                  <button onclick="sendMessage()">Send</button>
+                </div>
+                <button class="clear-button" onclick="clearMessages()">Clear</button>
+              </div>
         </div>
     </section>
     <footer>
@@ -72,5 +88,6 @@
             sidebar.style.display = 'none'
         }
     </script>
+     <script src="chatbot.js"></script>
 </body>
 </html>
