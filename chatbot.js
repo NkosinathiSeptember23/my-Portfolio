@@ -65,7 +65,8 @@ function getBotResponse(input) {
           3. Certificates<br>
           4. Projects<br>
           5. Experience<br>
-          6. Contact Info
+          6. Contact Info<br>
+          7. Interests
         </p>
         <p>Please type the number of your choice (1-6).</p>
       </div>
@@ -74,20 +75,17 @@ function getBotResponse(input) {
     botResponse.text = 'I possess a diverse set of skills, including  programming in JavaScript, Python, and Java. I also perform data analysis, leveraging statistical methods and tools to derive insights from complex datasets. Additionally, I have experience in both mobile and web development, where I create user-friendly applications and responsive websites that enhance user engagement and experience.';
   } else if (lowerInput.includes('qualifications') || lowerInput.includes('2')) {
     botResponse.text = 'I hold a Bachelor\'s degree in Mathematics and Computer Science completed from the university of Limpopo and Currently enrolled for honours in computer science.';
-  } else if (lowerInput.includes('certificates')) {
+  } else if (lowerInput.includes('Certificates') || lowerInput.includes('3')) {
     botResponse.text = 'I hold several relevant certifications, including the Azure AI Engineer Associate, which validates my expertise in designing and implementing AI solutions on Microsoft Azure. Additionally, I have completed the Microsoft Azure Fundamentals certification, providing me with a solid foundation in cloud concepts and services. I also hold the Microsoft Azure AI Fundamentals certification, which showcases my understanding of AI and machine learning concepts within the Azure environment. Furthermore, I have completed an "Introduction to Programming" course, as well as a "Complete Coding for Beginners" program, equipping me with essential programming skills and knowledge.'
-  } else if (lowerInput.includes('contact info') || lowerInput.includes('6')) {
+  } else if (lowerInput.includes('Contact Info') || lowerInput.includes('6')) {
     botResponse.text = 'You can contact me at nmabena415@gmail.com,0729692671 or reach out via LinkedIn(https://www.linkedin.com/in/nkosinathi-sibiya-b32709254/)'
-  } else if (lowerInput.includes('projects') || lowerInput.includes('4')){
+  } else if (lowerInput.includes('Projects') || lowerInput.includes('4')){
     botResponse.text = 'I have worked on several projects, including a personal website and an e-commerce platform.';
     botResponse.followUp = 'Here is a link to my GitHub repositories to check the projects https://github.com/NkosinathiSeptember23 ';
-  } else if (lowerInput.includes('experience') || lowerInput.includes('5')) {
+  } else if (lowerInput.includes('Experience') || lowerInput.includes('5')) {
     botResponse.text = 'I have 6 months experience as AI and Data Science intern done at Gijima Holdings.';
-    botResponse.followUp = 'I can provide details about my previous roles and responsibilities.';
-  } else if (lowerInput.includes('interests')) {
+  } else if (lowerInput.includes('Interests') || lowerInput.includes('7')) {
     botResponse.text = 'I’m interested in web development, machine learning, and open-source projects. What about your interests?';
-  } else if (lowerInput.includes('yes')) {
-    botResponse.text = 'Great! What would you like to know more about? Skills, qualifications, or maybe my projects?';
   } else if (lowerInput.includes('no')) {
     botResponse.text = 'No problem! Feel free to ask anything else or let me know if you want to explore something different.';
   }
