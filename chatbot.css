@@ -53,6 +53,7 @@
 .bot-message {
   align-self: flex-start;
   background-color: #f8d7da;
+  list-style: none;
 }
 
 .chat-input-container {
