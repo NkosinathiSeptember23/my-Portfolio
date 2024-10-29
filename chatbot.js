@@ -58,19 +58,19 @@ function getBotResponse(input) {
   if (lowerInput.includes('hello') || lowerInput.includes('hi')) {
     botResponse.text = `
       <div>
-        <p>Welcome to my portfolio. How can I assist you today? Here are some options:</p>
-        <ul>
-          <li>1. Skills</li>
-          <li>2. Qualifications</li>
-          <li>3. Certificates</li>
-          <li>4. Projects</li>
-          <li>5. Experience</li>
-          <li>6. Contact Info</li>
-        </ul>
+        <p>Welcome to my portfolio. How can I assist you today?</p>
+        <p>
+          1. Skills<br>
+          2. Qualifications<br>
+          3. Certificates<br>
+          4. Projects<br>
+          5. Experience<br>
+          6. Contact Info
+        </p>
         <p>Please type the number of your choice (1-6).</p>
       </div>
     `;
-  } else if (lowerInput.includes('skills') || lowerInput.includes('1')) {
+} else if (lowerInput.includes('skills') || lowerInput.includes('1')) {
     botResponse.text = 'I possess a diverse set of skills, including  programming in JavaScript, Python, and Java. I also perform data analysis, leveraging statistical methods and tools to derive insights from complex datasets. Additionally, I have experience in both mobile and web development, where I create user-friendly applications and responsive websites that enhance user engagement and experience.';
   } else if (lowerInput.includes('qualifications') || lowerInput.includes('2')) {
     botResponse.text = 'I hold a Bachelor\'s degree in Mathematics and Computer Science completed from the university of Limpopo and Currently enrolled for honours in computer science.';
@@ -81,8 +81,8 @@ function getBotResponse(input) {
   } else if (lowerInput.includes('projects') || lowerInput.includes('4')){
     botResponse.text = 'I have worked on several projects, including a personal website and an e-commerce platform.';
     botResponse.followUp = 'Here is a link to my GitHub repositories to check the projects https://github.com/NkosinathiSeptember23 ';
-  } else if (lowerInput.includes('experience')) {
-    botResponse.text = 'I have over three years of experience in software development, primarily focusing on full-stack development. Would you like to know more about my work experience?';
+  } else if (lowerInput.includes('experience') || lowerInput.includes('5')) {
+    botResponse.text = 'I have 6 months experience as AI and Data Science intern done at Gijima Holdings.';
     botResponse.followUp = 'I can provide details about my previous roles and responsibilities.';
   } else if (lowerInput.includes('interests')) {
     botResponse.text = 'I’m interested in web development, machine learning, and open-source projects. What about your interests?';
