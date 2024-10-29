@@ -203,109 +203,7 @@ nav a{
         width: 100%; /* Make image full width */
     }
 }
-
-
-#Qualifications {
-    width: 100%;
-    min-height: 610px;
-    background-color: grey;
-    padding-top: 60px;
-}
-
-#Qualifications .inner {
-    overflow: hidden; /* Clear floats */
-}
-
-#Qualifications .inner h1 {
-    margin-bottom: 20px;
-    color: white;
-    font-family: 'Open Sans', sans-serif; 
-    font-weight: 300;
-    text-align: center;
-    animation: slideIn 2s ease-out, fadeIn 2s ease-in;
-    font-size: 2.5rem; 
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); 
-}
-
-#Qualifications .inner #bachelor {
-    width: 40%;
-    min-height: 400px;
-    float: left;
-    padding-top: 10px;
-    border-radius: 40px;
-    background-color: #555;
-    border-color: #f39c12;  
-    margin-left: 100px;
-    animation: moveIn 1.5s ease-out, fadeIn 1.5s ease-in;
-    margin-bottom: 30px;
-}
-
-#Qualifications .inner #Honours {
-    width: 40%;
-    min-height: 400px;
-    float: right;
-    padding-top: 10px;
-    background-color: #555;
-    border-color: #f39c12;
-    margin-right: 100px;
-    border-radius: 40px;
-    animation: moveIn 1.5s ease-out, fadeIn 1.5s ease-in;
-    margin-bottom: 30px;
-}
-
-#Qualifications .inner #Honours li,
-#Qualifications .inner li {
-    margin-bottom: 10px; 
-    font-size: 1.1em; 
-    line-height: 1.2; 
-    color: white;    
-    text-align: center; 
-    list-style: none;
-    padding-top: 10px;
-    animation: slideIn 1.5s ease-out, fadeIn 1.5s ease-in;
-}
-
-#Qualifications .inner #bachelor h3,
-#Qualifications .inner #Honours h3 {
-    color: white;
-    font-family: 'Open Sans', sans-serif; 
-    font-weight: 50;
-    text-align: center;
-    animation: moveIn 2s ease-out, fadeIn 2s ease-in;
-    font-size: 2rem; 
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); 
-}
-
-/* Responsive Styles */
-@media (max-width: 768px) {
-    #Qualifications .inner #bachelor,
-    #Qualifications .inner #Honours {
-        width: 80%; 
-        margin: 0 auto; 
-        float: none; 
-    }
-
-    #Qualifications .inner h1 {
-        font-size: 2rem; 
-    }
-}
-
-@media (max-width: 480px) {
-    #Qualifications .inner h1 {
-        font-size: 1.8rem; 
-    }
-
-    #Qualifications .inner #bachelor h3,
-    #Qualifications .inner #Honours h3 {
-        font-size: 1.5rem; 
-    }
-
-    #Qualifications .inner #bachelor li,
-    #Qualifications .inner #Honours li {
-        font-size: 1em; /* Adjust list item size */
-    }
-}
-
+     
     #Certificates {
         width: 100%;
         min-height: 610px;
@@ -439,7 +337,7 @@ nav a{
         display: flex;
         flex-direction: column;
         align-items: center;
-        background-color: #555;
+        background-color: #ecf0f1;
         padding: 20px;
         border-radius: 8px;
         width: 50%;
@@ -453,7 +351,7 @@ nav a{
         display: flex;
         flex-direction: column;
         width: 50%;
-        color: white;
+        color: black;
     }
     
     label {
@@ -586,7 +484,7 @@ h3{
 }
 
 .button {
-    background-color: #007BFF; /* Button color */
+    background-color: #2ecc71; /* Button color */
     color: white; /* Text color */
     padding: 10px 20px; /* Padding for buttons */
     margin: 0 10px; /* Space between buttons */
