@@ -544,7 +544,7 @@ nav ul.sidebar {
     width: 200px;
     height: 100%;
     background-color: #34495e;
-    padding-top: 2rem;
+    padding-top: 0.1rem;
     transition: transform 0.3s ease;
     transform: translateX(100%);
 }
