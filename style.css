@@ -312,10 +312,12 @@ nav a{
     }
     
    /* Contact Section */
+#Contact {
+    background-image: url('/images/back.jpg');
+}
 #Contact .inner {
     text-align: center;
     padding: 2rem 0;
-    background-image: url('/images/back.jpg');
 }
 
 #Contact h1 {
