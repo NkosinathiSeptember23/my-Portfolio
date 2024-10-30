@@ -68,8 +68,9 @@ nav ul {
     gap: 1.5rem;
 }
 
+/* Sidebar */
 nav ul.sidebar {
-    display: none;
+    display: none; /* Start hidden */
     flex-direction: column;
     position: fixed;
     top: 0;
@@ -77,42 +78,57 @@ nav ul.sidebar {
     width: 200px;
     height: 100%;
     background-color: #34495e;
-    padding-top: 1rem;
+    padding-top: 0.5rem; /* Reduce padding to minimize space at the top */
     transition: transform 0.3s ease;
-    transform: translateX(100%);
+    transform: translateX(100%); /* Hidden by default */
+    align-items: flex-start; /* Aligns items to the top of the sidebar */
+    padding-left: 1rem; /* Adds a bit of space on the left */
 }
 
-nav ul.sidebar li {
-    margin: 1rem 0;
+nav ul.sidebar.visible {
+    display: flex; /* Show when 'visible' class is added */
+    transform: translateX(0); /* Slide into view */
+}
+
+.sidebar li {
+    width: 100%; /* Ensures each list item takes full width */
+    margin: 0; /* Remove any additional margin */
+}
+
+.sidebar li:first-child {
+    margin-top: 0; /* Ensure the close icon is right at the top */
 }
 
 .sidebar li a {
     color: #ecf0f1;
     text-decoration: none;
     font-size: 1.2rem;
-    padding: 0.5rem;
+    padding: 0.8rem 0; /* Adjust padding for spacing */
+    width: 100%; /* Ensures the link spans the full width */
+    display: block; /* Makes the entire link clickable */
 }
 
 .sidebar li a:hover {
     background-color: #1abc9c;
 }
 
+
+/* Mobile Navigation */
 .menuicon {
     display: none;
 }
 
-.hideOnMobile {
-    display: inline;
-}
-
+/* Show menu icon on small screens and hide default navigation */
 @media (max-width: 768px) {
     .menuicon {
-        display: inline;
+        display: inline; /* Show menu icon on small screens */
     }
     .hideOnMobile {
-        display: none;
+        display: none; /* Hide default nav links on mobile */
     }
 }
+
+
 /* About Section */
 #about {
     padding: 2rem 10%;
