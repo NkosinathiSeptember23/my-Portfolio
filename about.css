@@ -78,34 +78,35 @@ nav ul.sidebar {
     width: 200px;
     height: 100%;
     background-color: #34495e;
-    padding-top: 0.5rem; /* Reduce padding to minimize space at the top */
+    padding-top: 0.1rem; 
     transition: transform 0.3s ease;
-    transform: translateX(100%); /* Hidden by default */
-    align-items: flex-start; /* Aligns items to the top of the sidebar */
-    padding-left: 1rem; /* Adds a bit of space on the left */
+    transform: translateX(100%); 
+    align-items: flex-start; 
+    padding-left: 1rem; 
+    
 }
 
 nav ul.sidebar.visible {
-    display: flex; /* Show when 'visible' class is added */
-    transform: translateX(0); /* Slide into view */
+    display: flex; 
+    transform: translateX(0); 
 }
 
 .sidebar li {
-    width: 100%; /* Ensures each list item takes full width */
-    margin: 0; /* Remove any additional margin */
+    width: 100%; 
+    margin: 0; 
 }
 
 .sidebar li:first-child {
-    margin-top: 0; /* Ensure the close icon is right at the top */
+    margin-top: 0; 
 }
 
 .sidebar li a {
     color: #ecf0f1;
     text-decoration: none;
     font-size: 1.2rem;
-    padding: 0.8rem 0; /* Adjust padding for spacing */
-    width: 100%; /* Ensures the link spans the full width */
-    display: block; /* Makes the entire link clickable */
+    padding: 0.1rem 0; 
+    width: 100%; 
+    display: block; 
 }
 
 .sidebar li a:hover {
