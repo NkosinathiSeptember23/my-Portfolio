@@ -777,3 +777,10 @@ footer {
     }
 }
 
+footer .button-row{
+    margin-left: 80%;
+}
+
+#button-chat{
+   background-color: #2ecc71;
+}
