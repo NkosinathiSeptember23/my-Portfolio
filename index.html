@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MyProfile</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="chatbot.css">
+
 </head>
 <body>
     <div id="header" class="clearfix">
@@ -45,12 +47,30 @@
 
             <div id="picture">
                 <img src="/images/computer.jpg" alt="">
-            </div>
+            </div>  
         </div>
     </section>
+    <div class="button-row">
+        <button class="button" onclick="showChatbot()">Chat with us</button>
+    </div>
+
+    <div id="chatbot" class="chatbot">
+        <div class="chat-header">
+            <h2>Chatbot</h2>
+            <button class="close-button" onclick="closeChatbot()">Close</button>
+        </div>
+        <div id="chat-messages" class="chat-messages"></div>
+        <div class="chat-input-container">
+            <input id="chat-input" type="text" placeholder="Type a message...">
+            <button onclick="sendMessage()">Send</button>
+        </div>
+        <button class="clear-button" onclick="clearMessages()">Clear</button>
+    </div>
+    
     <footer>
-        <p>&copy; 2024 Nkosinathi Sibiya</p>
+        
         <div id="logo">
+            <p>&copy; 2024 Nkosinathi Sibiya</p>
             <a href="https://www.linkedin.com/in/nkosinathi-sibiya-b32709254/" target="_blank"><img src="/images/linkedin.png"></a>
             <a href="https://github.com/NkosinathiSeptember23" target="_blank"><img src="/images/github.png"></a>
 
@@ -71,6 +91,7 @@
             }, 300);
         }
     </script>
+    <script src="chatbot.js"></script>
 
 </body>
 </html>

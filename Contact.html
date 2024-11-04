@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Me</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="chatbot.css">
 </head>
 <body>
     <div id="header" class="clearfix">
@@ -34,15 +35,13 @@
         <div class="inner">
             <h1>CONTACT ME</h1>
         </div>
-       
-           
         <div id="myform">
             <form action="https://formsubmit.co/a2022115fe0fc87c9f64af14043ea894" method="POST">
                 <label for="name">Name:</label>
                 <input type="text" id="name" name="name" required>
 
-                <label for="name">Surname:</label>
-                <input type="text" id="name" name="name" required>
+                <label for="surname">Surname:</label>
+                <input type="text" id="surname" name="surname" required>
 
                 <label for="email">Email:</label>
                 <input type="email" id="email" name="email" required>
@@ -52,37 +51,49 @@
 
                 <button type="submit">Submit</button>
             </form>
-             <!--<div class="personal-details">
-                <h2>Personal Details</h2>
-                <p>Email: nmabena415@gmail.com</p>
-                <p>Phone: 0729692671</p>
-                <p>LinkedIn: <a href="https://www.linkedin.com/in/nkosinathi-sibiya-b32709254/" target="_blank">Nkosinathi Sibiya</a></p>
-            </div> -->
         </div>
+        
+        <div class="button-row">
+            <button class="button" onclick="showChatbot()">Chat with us</button>
+        </div>
+    
+        <div id="chatbot" class="chatbot">
+            <div class="chat-header">
+                <h2>Chatbot</h2>
+                <button class="close-button" onclick="closeChatbot()">Close</button>
+            </div>
+            <div id="chat-messages" class="chat-messages"></div>
+            <div class="chat-input-container">
+                <input id="chat-input" type="text" placeholder="Type a message...">
+                <button onclick="sendMessage()">Send</button>
+            </div>
+            <button class="clear-button" onclick="clearMessages()">Clear</button>
+        </div>
+        
         <footer>
             <p>&copy; 2024 Nkosinathi Sibiya</p>
             <div id="logo">
                 <a href="https://www.linkedin.com/in/nkosinathi-sibiya-b32709254/" target="_blank"><img src="/images/linkedin.png"></a>
                 <a href="https://github.com/NkosinathiSeptember23" target="_blank"><img src="/images/github.png"></a>
-
             </div>
         </footer>
-         <script>
-        function showSidebar() {
-            const sidebar = document.querySelector('.sidebar');
-            sidebar.style.display = 'flex';
-            sidebar.classList.add('visible');
-        }
 
-        function hideSidebar() {
-            const sidebar = document.querySelector('.sidebar');
-            sidebar.classList.remove('visible');
-            setTimeout(() => {
-                sidebar.style.display = 'none';
-            }, 300);
-        }
-    </script>
+        <script>
+            function showSidebar() {
+                const sidebar = document.querySelector('.sidebar');
+                sidebar.style.display = 'flex';
+                sidebar.classList.add('visible');
+            }
 
+            function hideSidebar() {
+                const sidebar = document.querySelector('.sidebar');
+                sidebar.classList.remove('visible');
+                setTimeout(() => {
+                    sidebar.style.display = 'none';
+                }, 300);
+            }
+        </script>
+        <script src="chatbot.js"></script>
     </section>
 </body>
 </html>
